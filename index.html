@@ -1,0 +1,285 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESQ LINK</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="web3.css">
+    <link rel="stylesheet" href="../css/App.css">
+
+</head>
+<body>
+    <h1>RESQ LINK</h1>
+    <nav>
+        <a href="/home">HOME</a>
+        <a href="/aboutus">ABOUT US</a>
+        <a href="/comm">COMMUNITY</a>
+        <a href="/alerts">ALERTS</a>
+        <a href="/donate">DONATION</a>
+        <a href="/helpline">HELPLINE</a>
+    </nav>
+
+    <div class="haha">
+        <button class="emergency-button" id="emergency-button">Emergency Help</button>
+    </div>
+
+    <div class="modal" id="sos-modal">
+        <div class="modal-content">
+            <h3>Send SOS Message</h3>
+            <p>Your location will be sent to your emergency contacts.</p>
+            <button class="close-modal" id="send-sos">Send SOS</button>
+            <br><br>
+            <button class="close-modal" id="close-modal">Close</button>
+        </div>
+    </div>
+
+    <br>
+    <div class="container">
+        <h2>Select a Location for Weather Update</h2>
+        <select id="state-dropdown">
+            <option value="">Select a Location</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Pune">Pune</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+        </select>
+
+        <div id="weather-info">
+            <h3>Select a location to view weather information.</h3>
+        </div>
+
+        <div id="weather-map"></div>
+
+    </div>
+    <div id="map" ></div>
+
+    <div class="resources-section">
+        <h2>Disaster Resources and Precautions</h2>
+        <div class="resources-grid">
+
+            <div class="resource-card">
+                <img src="./PHOTOS/flood.jpg" alt="Flood">
+                <h3>Floods</h3>
+                <p>Floods can cause extensive damage. Be prepared to evacuate and avoid floodwaters.</p>
+            </div>
+
+            <div class="resource-card">
+                <img src="./PHOTOS/earthquake.jpg" alt="Earthquake">
+                <h3>Earthquakes</h3>
+                <p>Drop, Cover, and Hold On! Learn how to stay safe during an earthquake.</p>
+            </div>
+
+            <div class="resource-card">
+                <img src="./PHOTOS/wildfire.jpg" alt="Wildfire">
+                <h3>Wildfires</h3>
+                <p>Prepare an evacuation plan and keep flammable items away from your home.</p>
+            </div>
+
+            <div class="resource-card">
+                <img src="./PHOTOS/cyclone.jpg" alt="Cyclone">
+                <h3>Cyclones</h3>
+                <p>Secure your home, stay indoors, and keep emergency supplies handy.</p>
+            </div>
+
+            <div class="resource-card">
+                <img src="./PHOTOS/drought.jpg" alt="Drought">
+                <h3>Droughts</h3>
+                <p>Save water, plant drought-resistant crops, and conserve resources.</p>
+            </div>
+
+            <div class="resource-card">
+                <img src="./PHOTOS/landslides.jpg" alt="Landslide">
+                <h3>Landslides</h3>
+                <p>Avoid steep slopes during rains and stay alert to warnings in hilly areas.</p>
+            </div>
+
+            <div class="resource-card">
+                <img src="./PHOTOS/tsunami.jpg" alt="Tsunami">
+                <h3>Tsunamis</h3>
+                <p>Move to higher ground immediately and stay away from coastal areas.</p>
+            </div>
+
+            <div class="resource-card">
+                <img src="./PHOTOS/volcano.jpg" alt="Volcanic Eruption">
+                <h3>Volcanic Eruptions</h3>
+                <p>Evacuate promptly, avoid ashfall, and protect yourself with masks.</p>
+            </div>
+
+            <div class="resource-card">
+                <img src="./PHOTOS/heatwave.jpg" alt="Heatwave">
+                <h3>Heatwaves</h3>
+                <p>Stay hydrated, avoid direct sunlight, and take frequent breaks in the shade.</p>
+            </div>
+
+            <div class="resource-card">
+                <img src="./PHOTOS/avalanche.jpg" alt="Avalanche">
+                <h3>Avalanche</h3>
+                <p>Get proper equipment to create air pockets, first aid training, wear helmet to reduce head injuries.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <br>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+         <div class="mb-4">
+          <a class="hover:text-b1aefc mx-2" href="#">
+           About Us
+          </a>
+          <a class="hover:text-b1aefc mx-2" href="#">
+           Community
+          </a>
+          <a class="hover:text-b1aefc mx-2" href="#">
+           Alerts
+          </a>
+          <a class="hover:text-b1aefc mx-2" href="#">
+           Donation
+          </a>
+          <a class="hover:text-b1aefc mx-2" href="#">
+           Helpline
+          </a>
+         </div>
+         <div class="mb-4">
+          <a class="hover:text-b1aefc mx-2" href="#">
+           <i class="fab fa-facebook-f">
+           </i>
+          </a>
+          <a class="hover:text-b1aefc mx-2" href="#">
+           <i class="fab fa-twitter">
+           </i>
+          </a>
+          <a class="hover:text-b1aefc mx-2" href="#">
+           <i class="fab fa-instagram">
+           </i>
+          </a>
+          <a class="hover:text-b1aefc mx-2" href="#">
+           <i class="fab fa-linkedin-in">
+           </i>
+          </a>
+         </div>
+         <p>
+          © 2023 RESQ LINK. All rights reserved.
+         </p>
+        </div>
+       </footer>
+
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script>
+        const apiKey = '8d8cf8e092869ff9164ab1da9372ffff';
+
+        const map = L.map('weather-map').setView([20.5937, 78.9629], 5); // Default to India
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        const weatherLayer = L.tileLayer(`https://tile.openweathermap.org/map/precipitation_new/{z}/{x}/{y}.png?appid=${apiKey}`).addTo(map);
+
+        const cityMapping = {
+            "Delhi": { city: "Delhi", lat: 28.6139, lon: 77.2090 },
+            "Mumbai": { city: "Mumbai", lat: 19.0760, lon: 72.8777 },
+            "Chennai": { city: "Chennai", lat: 13.0827, lon: 80.2707 },
+            "Kolkata": { city: "Kolkata", lat: 22.5726, lon: 88.3639 },
+            "Bangalore": { city: "Bangalore", lat: 12.9716, lon: 77.5946 },
+            "Hyderabad": { city: "Hyderabad", lat: 17.3850, lon: 78.4867 },
+            "Pune": { city: "Pune", lat: 18.5204, lon: 73.8567 },
+            "Ahmedabad": { city: "Ahmedabad", lat: 23.0225, lon: 72.5714 }
+        };
+
+        function getWeatherForState(state) {
+            const selectedCity = cityMapping[state];
+            if (!selectedCity) {
+                return;
+            }
+
+            // Fetch weather data
+            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${selectedCity.city}&appid=${apiKey}&units=metric`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.cod === 200) {
+                        // Display weather information
+                        document.getElementById('weather-info').innerHTML = `
+                <h3>Weather in ${data.name}</h3>
+                <p><strong>Temperature:</strong> ${data.main.temp}°C</p>
+                <p><strong>Condition:</strong> ${data.weather[0].description}</p>
+                <p><strong>Humidity:</strong> ${data.main.humidity}%</p>
+                <p><strong>Wind Speed:</strong> ${data.wind.speed} m/s</p>
+            `;
+
+                        // Update map to the selected city
+                        map.setView([selectedCity.lat, selectedCity.lon], 10); // Zoom in to city level
+                        L.marker([selectedCity.lat, selectedCity.lon]).addTo(map)
+                            .bindPopup(`<b>${data.name}</b><br>${data.weather[0].description}`)
+                            .openPopup();
+                    } else {
+                        document.getElementById('weather-info').innerHTML = `<h3>Error fetching weather data. Please try again later.</h3>`;
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching weather data:', error);
+                    document.getElementById('weather-info').innerHTML = `<h3>Error fetching weather data. Please try again later.</h3>`;
+                });
+        }
+
+        // Event listener for state selection change
+        document.getElementById('state-dropdown').addEventListener('change', function () {
+            const selectedState = this.value;
+            if (selectedState) {
+                getWeatherForState(selectedState);
+            } else {
+                document.getElementById('weather-info').innerHTML = `<h3>Select a location to view weather information.</h3>`;
+            }
+        });
+
+        // Details for each disaster
+        const disasterDetails = {
+            Flood: "Floods can cause extensive damage to property and infrastructure. Precautions include staying informed about weather updates, moving to higher ground, and avoiding contact with floodwaters.",
+            Earthquake: "During an earthquake, 'Drop, Cover, and Hold On'. Stay away from windows and heavy objects that might fall. After the shaking stops, exit buildings cautiously.",
+            Wildfire: "Create a defensible space around your home. Keep flammable materials away and have an evacuation plan ready. During a wildfire, listen to emergency alerts.",
+            Cyclone: "Stay indoors during cyclones, secure loose objects, and stock up on emergency supplies like food, water, and batteries. Evacuate if authorities advise.",
+            Drought: "Save water and use it wisely. Plant drought-resistant crops and avoid unnecessary water usage. Support water conservation initiatives.",
+            Landslide: "Avoid steep slopes during heavy rains. Follow evacuation orders and stay informed about weather conditions in your area.",
+            Tsunami: "Move to higher ground immediately after an earthquake near coastal areas. Stay away from the coast until authorities declare it safe.",
+            Volcano: "During a volcanic eruption, evacuate promptly if advised. Avoid ashfall areas and use masks to protect yourself from inhaling ash.",
+            Heatwave: "Stay hydrated, wear light clothing, and avoid outdoor activities during peak heat hours. Take frequent breaks in cool or shaded areas.",
+            Pandemic: "Wear masks, maintain social distancing, and follow health guidelines. Stay informed about vaccines and treatments to reduce risks."
+        };
+
+        // Function to show disaster details in a popup
+        function showDetails(disaster) {
+            const detail = disasterDetails[disaster];
+            const modal = document.getElementById("disaster-modal");
+            const modalContent = document.getElementById("modal-content");
+
+            modalContent.innerHTML = `
+        <h3>${disaster}</h3>
+        <p>${detail}</p>
+        <button onclick="closeModal()">Close</button>
+    `;
+            modal.style.display = "block";
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            document.getElementById("disaster-modal").style.display = "none";
+        }
+
+        // Close modal when clicking outside it
+        window.onclick = function (event) {
+            const modal = document.getElementById("disaster-modal");
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };  
+    </script>
+
+</body>
