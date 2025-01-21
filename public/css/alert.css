@@ -1,0 +1,179 @@
+/* General Reset */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: white; /* Consistent background */
+    color: black; /* Black text for readability */
+}
+
+h1 {
+    text-align: center;
+    margin: 100px 0 20px; /* Space for the fixed navbar */
+    font-size: 32px;
+    font-weight: 600;
+    color: white; /* Black header text */
+}
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    justify-content: center; /* Center align links */
+    align-items: center;
+    background-color: #333; /* Dark background */
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    color: white; /* White text for contrast */
+    margin: 0 20px; /* Even spacing */
+    font-weight: 600;
+    transition: color 0.3s ease;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #b1aefc; /* Soft purple hover effect matching your palette */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    z-index: 1000;
+}
+
+nav .nav-left a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+nav .nav-left a:hover {
+    text-decoration: underline;
+}
+
+.nav-buttons button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.nav-buttons button:hover {
+    background-color: #777;
+}
+nav {
+    display: flex;
+    justify-content: space-between; /* Ensures space between nav-left and nav-buttons */
+    align-items: center; /* Align items vertically */
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.nav-left a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.nav-left a:hover {
+    text-decoration: underline;
+}
+
+.nav-buttons {
+    display: flex;
+    
+    
+    gap: 10px; /* Space between buttons */
+}
+.nav-buttons a{
+    margin-top: 10px;
+    color: white;
+    font-size: 18px;
+    margin-right: 30px;
+}
+.btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Navbar Button Styling (Optional for Login/Sign Up) */
+.but2 {
+    background-color: #b1aefc; /* Soft purple matching the palette */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.but2:hover {
+    background-color: white;
+    color: #b1aefc;
+    border: 1px solid #b1aefc; /* Subtle border on hover */
+}
+
+.alert-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.alert-box h3 {
+    margin: 0 0 10px;
+    color: #d9534f;
+}
+
+.alert-box p {
+    margin: 0 0 10px;
+    color: #555;
+}
+
+.alert-box button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.alert-box button:hover {
+    background-color: #0056b3;
+}

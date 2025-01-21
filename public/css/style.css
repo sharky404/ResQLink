@@ -1,0 +1,249 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    z-index: 1000;
+}
+
+nav .nav-left a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+nav .nav-left a:hover {
+    text-decoration: underline;
+}
+
+.nav-buttons button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.nav-buttons button:hover {
+    background-color: #777;
+}
+nav {
+    display: flex;
+    justify-content: space-between; /* Ensures space between nav-left and nav-buttons */
+    align-items: center; /* Align items vertically */
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.nav-left a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.nav-left a:hover {
+    text-decoration: underline;
+}
+
+.nav-buttons {
+    display: flex;
+    
+    
+    gap: 10px; /* Space between buttons */
+}
+.nav-buttons a{
+    margin-top: 10px;
+    color: white;
+    font-size: 18px;
+    margin-right: 30px;
+}
+.btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Main Container */
+.haha {
+    margin: 10px 0; /* Reduce the top and bottom margin */
+}
+.container {
+    margin-top: 80px; /* Offset for the fixed navbar */
+    margin-bottom: 60px; /* Offset for the fixed footer */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Dropdown and Weather Info */
+#state-dropdown {
+    padding: 10px;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+#weather-info {
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+/* Cards Section */
+.resources-section {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.resources-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.resource-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resource-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resource-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.resource-card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.resource-card p {
+    font-size: 14px;
+    color: #666;
+    padding: 0 10px;
+}
+
+/* Emergency Button */
+.haha {
+    margin: 20px 0;
+}
+
+.emergency-button {
+    padding: 15px 30px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.emergency-button:hover {
+    background-color: #b80022;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+}
+
+.close-modal {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.close-modal:hover {
+    background-color: #777;
+}
+
+/* Leaflet Map */
+#weather-map {
+    height: 400px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}

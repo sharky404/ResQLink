@@ -1,0 +1,202 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background-color: #ffffff; /* White background for main body */
+    color: #000000; /* Black text */
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin: 20px 0;
+}
+
+/* Login/Sign Up Button */
+.but2 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.but2:hover {
+    background-color: #0056b3;
+}
+
+/* Navbar Styles */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.class1 {
+    max-width: 900px;
+    margin: 100px auto 40px; /* Margin adjusted to avoid overlapping with navbar */
+    padding: 20px;
+    background: #f9f9f9; /* Light background to make the text pop */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.class1 h2, .class1 h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.class1 p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    margin-top: 10px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav a {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .class1 {
+        padding: 15px;
+    }
+
+    .but2 {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    z-index: 1000;
+}
+
+nav .nav-left a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+nav .nav-left a:hover {
+    text-decoration: underline;
+}
+
+.nav-buttons button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.nav-buttons button:hover {
+    background-color: #777;
+}
+nav {
+    display: flex;
+    justify-content: space-between; /* Ensures space between nav-left and nav-buttons */
+    align-items: center; /* Align items vertically */
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.nav-left a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.nav-left a:hover {
+    text-decoration: underline;
+}
+
+.nav-buttons {
+    display: flex;
+    
+    
+    gap: 10px; /* Space between buttons */
+}
+.nav-buttons a{
+    margin-top: 10px;
+    color: white;
+    font-size: 18px;
+    margin-right: 30px;
+}
+.btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
