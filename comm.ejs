@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Chat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/comm.css">
+
+</head>
+
+
+<body>
+    <h1 style = "color: white;">RESQ LINK</h1>
+
+    <nav>
+        <div class="nav-left">
+            <h1 class ="head">RESQ LINK</h1>
+            <a href="/home">HOME</a>
+            <a href="/aboutus">ABOUT US</a>
+            <a href="/comm">COMMUNITY</a>
+            <a href="/alerts">ALERTS</a>
+            <a href="/donate">DONATION</a>
+            <a href="/helpline">HELPLINE</a>
+        </div>
+        <div class="nav-buttons">
+            <a href="/logout">Logout</a>
+        </div>
+    </nav>
+
+    <div class="chat-container">
+        <h1>Community Chat</h1>
+        <div id="chat-box" class="chat-box"></div>
+        <div class="chat-input">
+            <input type="text" id="message-input" placeholder="Type your message here..." />
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <script>
+        const chatBox = document.getElementById('chat-box');
+        const messageInput = document.getElementById('message-input');
+        const sendButton = document.getElementById('send-button');
+
+        // Simulate sending messages
+        sendButton.addEventListener('click', () => {
+            const message = messageInput.value;
+            if (message.trim()) {
+                const messageElement = document.createElement('div');
+                messageElement.textContent = message;
+                chatBox.appendChild(messageElement);
+                messageInput.value = '';
+            }
+        });
+    </script>
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+         <div class="mb-4">
+          <a class="hover:text-b1aefc mx-2" href="#">
+           About Us
+          </a>
+          <a class="hover:text-b1aefc mx-2" href="#">
+           Community
+          </a>
+          <a class="hover:text-b1aefc mx-2" href="#">
+           Alerts
+          </a>
+          <a class="hover:text-b1aefc mx-2" href="#">
+           Donation
+          </a>
+          <a class="hover:text-b1aefc mx-2" href="#">
+           Helpline
+          </a>
+         </div>
+         <div class="mb-4">
+          <a class="hover:text-b1aefc mx-2" href="#">
+           <i class="fab fa-facebook-f">
+           </i>
+          </a>
+          <a class="hover:text-b1aefc mx-2" href="#">
+           <i class="fab fa-twitter">
+           </i>
+          </a>
+          <a class="hover:text-b1aefc mx-2" href="#">
+           <i class="fab fa-instagram">
+           </i>
+          </a>
+          <a class="hover:text-b1aefc mx-2" href="#">
+           <i class="fab fa-linkedin-in">
+           </i>
+          </a>
+         </div>
+         <p>
+          © 2023 RESQ LINK. All rights reserved.
+         </p>
+        </div>
+       </footer>
+</body>
+</html>

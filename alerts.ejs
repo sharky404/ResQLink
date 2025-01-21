@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESQ LINK - Alerts</title>
+    <link rel="stylesheet" href="../css/alert.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <h1>RESQ LINK - Alerts</h1>
+    <nav>
+        <div class="nav-left">
+            <h1>RESQ LINK</h1>
+            <a href="/home">HOME</a>
+            <a href="/aboutus">ABOUT US</a>
+            <a href="/comm">COMMUNITY</a>
+            <a href="/alerts">ALERTS</a>
+            <a href="/donate">DONATION</a>
+            <a href="/helpline">HELPLINE</a>
+        </div>
+        <div class="nav-buttons">
+            <a href="/logout">Logout</a>
+        </div>
+    </nav>
+        
+    <div class="container">
+        <div id="disaster-info">
+            <h3>Current Disaster Alerts</h3>
+            <p>Stay updated on any emergencies or disasters occurring near you.</p>
+        </div>
+
+        <div class="alert-box">
+            <h3>Alert: Earthquake Detected!</h3>
+            <p>Magnitude: 6.7</p>
+            <p>Location: Near Mumbai, Maharashtra</p>
+            <button onclick="acknowledgeAlert()">Acknowledge</button>
+        </div>
+
+        <div class="alert-box">
+            <h3>Alert: Flood Warning</h3>
+            <p>Heavy rainfall expected in the following areas: Delhi, Haryana, Punjab.</p>
+            <button onclick="acknowledgeAlert()">Acknowledge</button>
+        </div>
+
+        <div class="alert-box">
+            <h3>Alert: Cyclone Warning</h3>
+            <p>Dangerous winds expected in coastal areas of Andhra Pradesh and Tamil Nadu.</p>
+            <button onclick="acknowledgeAlert()">Acknowledge</button>
+        </div>
+    </div>
+    
+    <script>
+        function acknowledgeAlert() {
+            alert("Alert Acknowledged. Stay Safe!");
+        }
+    </script>
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+         <div class="mb-4" style="text-decoration: none;">
+">
+          <a class="hover:text-b1aefc mx-2" href="#">
+           About Us
+          </a>
+          <a class="hover:text-b1aefc mx-2" href="#">
+           Community
+          </a>
+          <a class="hover:text-b1aefc mx-2" href="#">
+           Alerts
+          </a>
+          <a class="hover:text-b1aefc mx-2" href="#">
+           Donation
+          </a>
+          <a class="hover:text-b1aefc mx-2" href="#">
+           Helpline
+          </a>
+         </div>
+         <div class="mb-4">
+          <a class="hover:text-b1aefc mx-2" href="#">
+           <i class="fab fa-facebook-f">
+           </i>
+          </a>
+          <a class="hover:text-b1aefc mx-2" href="#">
+           <i class="fab fa-twitter">
+           </i>
+          </a>
+          <a class="hover:text-b1aefc mx-2" href="#">
+           <i class="fab fa-instagram">
+           </i>
+          </a>
+          <a class="hover:text-b1aefc mx-2" href="#">
+           <i class="fab fa-linkedin-in">
+           </i>
+          </a>
+         </div>
+         <p>
+          © 2023 RESQ LINK. All rights reserved.
+         </p>
+        </div>
+       </footer>
+</body>
+</html>
